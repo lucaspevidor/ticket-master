@@ -4,7 +4,7 @@ ENV PORT=3000
 
 WORKDIR /app
 COPY package.json .
-RUN npm i
+RUN npm i --omit=dev
 COPY . .
 
 CMD ["npm", "start"]
